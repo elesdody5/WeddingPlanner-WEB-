@@ -1,0 +1,78 @@
+body 
+{
+	background-image: url("brideandgroom.jpg");
+	background-repeat:no-repeat;
+    background-size:cover;
+ 	
+    
+}
+
+
+fieldset 
+		{
+			background-color: rgba( 252, 223, 239 ,0.75);   
+			border: 15px   #FDCDE6    ; 
+			border-style: double;
+			width: 450px ; 
+			margin: 200px auto ;
+		}	
+		legend 
+		{
+			border:5px double #FDCDE6  ;
+			background-color: rgba(252,223,239,0.6); 
+			padding: 5px;
+			position: center ; 
+
+			
+		}
+		label 
+		{
+			padding: 10px ;
+			margin-bottom: px ;
+			display: block;
+			font-weight: bold ;
+
+		}
+		input 
+		{
+			padding: 8px ; 
+			border : none ;
+			border-bottom: 4px solid #FDCDE6 ;
+			background-color:rgba( 250, 223, 239 ,0.0) ;
+			width: 200px ;
+			
+
+		}
+		.t
+		{
+			padding: 8px ; 
+			border: solid normal;
+			background-color: normal ;
+			align-content: center;
+		}
+select 
+{
+	padding: 10px ;
+	margin-bottom: 5px;
+
+}
+hr
+{
+	color: rgba(253, 205, 230, 0.95) ;
+	border: 2px solid  ;
+}
+.footer 
+{
+	background: # #FDCDE6 ;
+	text-align: center;
+	padding: 10px 0;
+}
+div
+{
+	background: #FDCDE6  ; 
+	margin: 0;
+	padding: 0px ;
+	width: auto ; 
+	text-align: center;
+
+}
