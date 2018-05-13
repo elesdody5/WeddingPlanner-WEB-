@@ -1,0 +1,310 @@
+.mySlides {display: none;}
+.mySlides img {vertical-align: middle;height: 650px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.fixed-text {
+  color: #000;
+  font-size: 50px;
+  padding: 15px 150px;
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  width: 100%;
+  text-align:left;
+  font-family: 'Dancing Script';
+
+
+}
+.text {
+  color: white;
+  font-size: 20px;
+  padding:  15px;
+  position: absolute;
+  width: 40%; 
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+    .fixed-text {font-size: 11px}
+}
+/*== menu end======================================== */
+/*== Start about======================================== */
+
+.about h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #2b2b2b;
+    line-height: 26px;
+}
+.about hr{ 
+    display: block;
+    margin:10px auto 20px auto;
+    border:1px solid #ff4b79;
+    width:10%;
+} 
+.about .column {
+    float: left;
+    white-space: normal;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.about .column h2{
+    margin:20px auto;
+}
+.about .column p {
+    color: #72787b;
+    margin-right: auto;
+}
+
+/* Clear floats after the columns */
+.about:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*== End about======================================== */
+/*== Start Services======================================== */
+.services{ 
+    background-color: #cccccc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.services h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #2b2b2b;
+    line-height: 26px;
+}
+.services hr{ 
+    display: block;
+    margin:10px auto 20px auto;
+    border:1px solid #ff4b79;
+    width:10%;
+} 
+.services div.gallery {
+    border: 1px solid #ccc;
+}
+
+.services div.gallery:hover {
+    border: 1px solid #777;
+}
+
+.services div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.services div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.services .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .services .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+   .services .responsive {
+        width: 100%;
+    }
+}
+
+.services .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*== End Services======================================== */
+/*== Start team======================================== */
+.team{ 
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.team h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #2b2b2b;
+    line-height: 26px;
+}
+.team hr{ 
+    display: block;
+    margin:10px auto 20px auto;
+    border:1px solid #ff4b79;
+    width:10%;
+} 
+.team *,.team *:before, *:after {
+  box-sizing: inherit;
+}
+
+.team .column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .team .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.team .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team .member-container {
+  padding: 0 16px;
+}
+
+.team .member-container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.team .title {
+  color: grey;
+}
+
+.team .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.team .button:hover {
+  background-color: #555;
+}
+/*== End Teams======================================== */
+/*== Start Contact======================================== */
+.contact{ 
+    background-color: #cccccc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.contact h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: #2b2b2b;
+    line-height: 26px;
+}
+.contact hr{ 
+    display: block;
+    margin:10px auto 20px auto;
+    border:1px solid #ff4b79;
+    width:10%;
+} 
+.contact input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.contact input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact .contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*== End Contact======================================== */
+ .dropdown3
+ {
+  position: relative;
+    display: inline-block;
+    float: left;
+    padding-top: 20px ;
+    padding-left: 400px;
+
+ }
+ .icons
+ {
+  width: 300px;
+  height: 300px ;
+  margin-right: 30px;
+  border-radius: 50px;
+  
+ }
+ .icons2
+{
+  width: 300px;
+  height: 300px ;
+  margin-left:120px;
+  border-radius: 50px;
+}

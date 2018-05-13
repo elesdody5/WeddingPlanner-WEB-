@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-US">
+<% include templates/head.ejs %>
+<body>
+<% include templates/header.ejs %>
+<% var length = xs.length; %>
+<% var offset = length%4; %>
+<% var counter = 0; %>
+<!-- Photo Grid -->
+<div class="photo-grid">
+<div class="container">
+    <div class="row">
+      <div class="column">
+
+
+<%xs.data.forEach(function(x,index){%>
+
+<%if(index%4 === 0 && index !== 0){ %>
+</div>
+<div class="column">
+  <%}
+  else if(counter%4 === 0 && counter !== 0 ){
+  offset--;
+  counter--;
+  }%>
+  <%counter++;%>
+<div class="product">
+<span class="helper"></span>
+  <img src="<%= xs.image_url+x.image%>" alt="Avatar" class="image">
+  <div class="overlay">Name: <%=x.name%> <br> city: <%=x.city%><br> phone: <%=x.phone%> </div>
+</div>
+<%if(index===length-1){%>
+</div>
+<%}%>
+<%});%>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Add center <h2>
+  </div>
+  <div class="modal-body">
+<form method="post" enctype="multipart/form-data" action="/beauty">
+
+
+  name:<br>
+  <input type="text" name="name" required>
+  <br>
+  city:<br>
+  <input type="text" name="city">
+<br>
+  phone:<br>
+  <input type="text" name="phone">
+<br>
+  image:<br>
+  <input type="file" name="image" accept="image/jpeg">
+  <br><br>
+  <input type="submit" value="add">
+
+</form>
+
+  </div>
+  <div class="modal-footer">
+    <h3>Note:name field is required</h3>
+  </div>
+</div>
+
+</div>
+
+<!-- Start Footer -->
+
+<% include templates/footer.ejs %>
+</body>
+</html>
