@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wedding Planner</title>
+<link rel="icon" type="image/icon" href="images/wedding-icon.png">
+<!-- Stylesheet links -->
+<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+
+<link rel="stylesheet" href="css/normalize.css" /><!-- normalize css file -->
+<link rel="stylesheet" href="css/fontawesome-all.min.css"><!-- Font awesome file for icons as fonts -->
+<link rel="stylesheet" type="text/css" href="css/basic.css"> <!-- basic css file for reseting,header & footer-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- Stylesheet links end -->
+</head>
+<body>
+    <!-- Start navbar menu -->
+    <header class="header row">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="Wedding Planner logo"></a>
+            </div>
+            <div class="search-box">
+                <a class="search-icon" href="javascript: void(0);"><i class="fas fa-search fa-2x"></i></a>
+                <div class="search-input">
+                    <form>
+                        <input type="search" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+            <a class="toggle-mobile-btn" href="javascript: void(0);">
+                <span></span>
+            </a>
+            <nav class="navigation">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa fa-home fa-2x"></i></a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="sub-menu"><a href="#services">Services</a>
+                        <ul>
+                            <li><a href="halls">Halls</a></li>
+                            <li><a href="beauty">Beauty</a></li>
+                            <li><a href="fashion">Fashion</a></li>
+                            <li><a href="photographers">Photography</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- End navbar menu -->
+    <!-- Start Gallary -->
+    <div class="slideshow-container"  >
+
+        <div class="mySlides fade">
+          <img src="images/slidder-1.jpg" style="width:100%">
+          <div class="fixed-text">Why We ?</div>
+          <div class="text">We connect the wedding planning dots  </div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slidder-2.jpg" style="width:100%">
+          <div class="fixed-text">Why We ?</div>
+          <div class="text">We remind, schedule and plan every detail for you!</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/slidder-3.jpg" style="width:100%">
+          <div class="fixed-text">Why We ?</div>
+          <div class="text">So You can marry without any stress !</div>
+        </div>
+
+    </div>
+
+    <!-- End Gallary -->
+    <!-- Start About Section -->
+<!-- End About Section -->
+<!-- Start Services Section -->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 >Our Services</h1>
+            <hr>
+       </div>
+
+    <div class="dropdown3" >
+    <a href="beauty">
+    <img src="images/beauty.png"  class="icons">
+    </a>
+    <a href="halls">
+    <img src="images/halls.png" class="icons2">
+    </a>
+    <br>
+    <br>
+    <a href="fashion">
+    <img src="images/fashion.png"  class="icons">
+    </a>
+    <a href="photographers">
+    <img src="images/photographers.png" class="icons2">
+    </a>
+  </div>
+  <div class="clearfix"></div>
+    </div>
+
+    </div>
+<!-- End Services Section -->
+<!-- Start team -->
+
+           <div class="about" >
+        <div class="container" >
+            <h1 id="about" >About us</h1>
+            <hr>
+              <div class="column">
+                <h2 id="about">Who we are?</h2>
+                <p>A website and mobile application that helps brides and grooms to have an easier wedding </p>
+              </div>
+              <div class="column">
+                <h2>What we do?</h2>
+                <p>We are helping brides and grooms to have an easy wedding via collecting all their needs like photographers,wedding halls,fashion and  more  in one container</p>
+              </div>
+              <div class="column">
+                <h2>Future growth.</h2>
+                <p>Extending our application by adding some extra stuff <p>
+            </div>
+        </div>
+    </div>
+
+<!-- End team -->
+<!-- Start contact -->
+<div class="contact" id="contact">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <hr>
+        <div class="contact-container">
+          <form method="post" enctype="multipart/form-data" action="/web/fashion"><!-- Future growth, php code for contact -->
+            <label for="brand">brand</label>
+            <input type="text" id="brand" name="brand" placeholder="brand name...">
+
+            <label for="size">Size</label>
+            <select id="size" name="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="larg">L</option>
+              <option value="x_larg">xxL</option>
+              <option value="XX_larg">xxL</option>
+            </select>
+
+            <label for="type">Type</label>
+            <select id="type" name="ftype">
+              <option value="suit">suit</option>
+              <option value="dress">dress</option>
+            </select>
+            <label for="color"> Color </label>
+            <input type="text" id="color" name="color">
+            <label for="price"> pPrice </label>
+            <input type="text" id="price" name="price">
+
+            <label for="city">City</label>
+            <select id="city" name="city">
+              <option value="menouf">Menouf</option>
+              <option value="tanta">Tanta</option>
+              <option value="cairo">Cairo</option>
+              <option value="sharm sheikh">Sharm El-sheikh</option>
+              <option value="alex">Alex</option>
+              <option value="suiz">Suiz</option>
+              <option value="shebin elkom">Shebin el-kom</option>
+              <option value="mansoura">Mansoura</option>
+              <option value="port saied">Port Saied</option>
+              <option value="souhag">Souhag</option>
+              <option value="elmenia">Elmenia</option>
+              <option value="aswan">Aswan</option>
+            </select>
+
+          <label for="file">image</label>
+         <input name="image" type="file">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+    </div>
+</div>
+<!-- End contact -->
+<!-- Start Footer -->
+<div class="footer">
+  <p>Wedding Planner &copy; 2018</p>
+</div>
+<!-- End Footer -->
+
+
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <!-- Embed Javascripts End -->
+</body>
+</html>
